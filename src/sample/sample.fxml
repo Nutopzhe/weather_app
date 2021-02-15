@@ -17,7 +17,7 @@
                 </Text>
             </children>
         </AnchorPane>
-        <TextField fx:id="enterCityField" alignment="CENTER" layoutX="36.0" layoutY="99.0" prefHeight="33.0" prefWidth="187.0" promptText="Введите город" style="-fx-background-color: #d3e0ea; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #276678;">
+        <TextField fx:id="city" alignment="CENTER" layoutX="36.0" layoutY="99.0" prefHeight="33.0" prefWidth="187.0" promptText="Введите город" style="-fx-background-color: #d3e0ea; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #276678;">
          <font>
             <Font name="Arial Bold Italic" size="12.0" />
          </font></TextField>
