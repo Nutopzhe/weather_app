@@ -51,11 +51,11 @@ public class Controller {
 
                 if (!output.isEmpty()) {
                     JSONObject obj = new JSONObject(output);
-                    temp.setText(String.valueOf(obj.getJSONObject("main").getDouble("temp")));
-                    feels_like.setText(String.valueOf(obj.getJSONObject("main").getDouble("feels_like")));
-                    temp_min.setText(String.valueOf(obj.getJSONObject("main").getDouble("temp_min")));
-                    temp_max.setText(String.valueOf(obj.getJSONObject("main").getDouble("temp_max")));
-                    pressure.setText(String.valueOf(obj.getJSONObject("main").getDouble("pressure")));
+                    temp.setText(String.valueOf(obj.getJSONObject("main").getInt("temp")));
+                    feels_like.setText(String.valueOf(obj.getJSONObject("main").getInt("feels_like")));
+                    temp_min.setText(String.valueOf(obj.getJSONObject("main").getInt("temp_min")));
+                    temp_max.setText(String.valueOf(obj.getJSONObject("main").getInt("temp_max")));
+                    pressure.setText(String.valueOf(obj.getJSONObject("main").getInt("pressure")));
                 }
             }
         });
