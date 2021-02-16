@@ -12,7 +12,7 @@ import javafx.scene.control.TextField;
 import org.json.JSONObject;
 
 public class Controller {
-    private double phaToMmhg = 0.75006375541921;
+    private final double phaToMmhg = 0.75006375541921;
 
     @FXML
     private ResourceBundle resources;
