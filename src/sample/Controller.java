@@ -12,6 +12,7 @@ import javafx.scene.control.TextField;
 import org.json.JSONObject;
 
 public class Controller {
+    private double phaToMmhg = 0.75006375541921;
 
     @FXML
     private ResourceBundle resources;
@@ -55,7 +56,7 @@ public class Controller {
                     feels_like.setText(String.valueOf(obj.getJSONObject("main").getInt("feels_like")));
                     temp_min.setText(String.valueOf(obj.getJSONObject("main").getInt("temp_min")));
                     temp_max.setText(String.valueOf(obj.getJSONObject("main").getInt("temp_max")));
-                    pressure.setText(String.valueOf(obj.getJSONObject("main").getInt("pressure")));
+                    pressure.setText(String.format("%.2f", obj.getJSONObject("main").getInt("pressure") * phaToMmhg));
                 }
             }
         });
